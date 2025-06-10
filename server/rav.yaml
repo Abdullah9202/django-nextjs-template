@@ -1,0 +1,52 @@
+scripts:
+  # For Windows
+  createsuperuser:
+    - python manage.py createsuperuser
+  makemigrations:
+    - python manage.py makemigrations
+  migrate:
+    - python manage.py migrate
+  server:
+    - python manage.py runserver
+  asgi-server:
+    - uvicorn metaprocrm.asgi:application --reload
+  shell:
+    - python manage.py shell
+  startapp:
+    - python manage.py startapp
+  test:
+    - python manage.py test
+  collectstatic:
+    - python manage.py collectstatic --noinput
+  loaddata:
+    - python manage.py loaddata
+  dumpdata:
+    - python manage.py dumpdata
+  clearsession:
+    - python manage.py clearsessions
+  
+  # For macOS & Linux
+  _createsuperuser:
+    - python3 manage.py createsuperuser
+  _makemigrations:
+    - python3 manage.py makemigrations
+  _migrate:
+    - python3 manage.py migrate
+  _server:
+    - python3 manage.py runserver
+  _asgi-server:
+    - uvicorn metaprocrm.asgi:application --reload
+  _shell:
+    - python3 manage.py shell
+  _startapp:
+    - python3 manage.py startapp
+  _test:
+    - python3 manage.py test
+  _collectstatic:
+    - python3 manage.py collectstatic --noinput
+  _loaddata:
+    - python3 manage.py loaddata
+  _dumpdata:
+    - python3 manage.py dumpdata
+  _clearsession:
+    - python3 manage.py clearsessions
