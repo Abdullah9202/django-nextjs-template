@@ -9,7 +9,7 @@ scripts:
   server:
     - python manage.py runserver
   asgi-server:
-    - uvicorn metaprocrm.asgi:application --reload
+    - uvicorn server.asgi:application --reload
   shell:
     - python manage.py shell
   startapp:
@@ -35,7 +35,7 @@ scripts:
   _server:
     - python3 manage.py runserver
   _asgi-server:
-    - uvicorn metaprocrm.asgi:application --reload
+    - uvicorn server.asgi:application --reload
   _shell:
     - python3 manage.py shell
   _startapp:
